@@ -1,0 +1,393 @@
+🏟  Bundesliga Match Outcome Predictor
+Complete Project Blueprint — Agent & Developer Reference
+ML Ensemble  •  Live APIs  •  React Frontend  •  FastAPI Backend
+📌 Project Overview
+Build a Bundesliga match outcome predictor using a 4-model ensemble (ELO + Logistic Regression + XGBoost + LLM). Data is fetched from free APIs, stored in SQLite, and presented through a React frontend backed by a FastAPI server. The system retrains every 4–6 weeks and monitors for concept drift.
+Component
+Technology
+Purpose
+Data Layer
+OpenLigaDB + Understat + API-Football
+Fixtures, results, xG, possession
+Feature Store
+SQLite → Pandas
+Processed match rows, one per game
+ML Models
+scikit-learn, XGBoost, custom ELO
+4-model ensemble
+LLM
+Claude API (claude-sonnet-4-20250514)
+Reasoning on recent form & context
+Backend
+FastAPI + APScheduler
+Serve predictions, trigger retrains
+Frontend
+React + Recharts + Tailwind
+Dashboards, match cards, accuracy tracker
+Deploy
+Railway or Render (free tier)
+Hosted public URL
+PHASE 1: Environment & Project Scaffold
+⏱ ~2 days
+1.1  Repository Structure
+football-predictor/
+├── data/                  # raw CSVs + SQLite DB
+├── pipeline/
+│   ├── fetch_openliga.py  # OpenLigaDB ingestion
+│   ├── fetch_understat.py # xG + advanced stats
+│   ├── fetch_apifootball.py # possession, lineups
+│   └── features.py        # feature engineering
+├── models/
+│   ├── elo.py
+│   ├── logistic.py
+│   ├── xgboost_model.py
+│   ├── llm_model.py
+│   └── ensemble.py
+├── api/
+│   └── main.py            # FastAPI app
+├── frontend/              # React app (Vite)
+├── notebooks/             # EDA + training experiments
+├── scheduler.py           # APScheduler jobs
+└── requirements.txt
+1.2  Dependencies to Install
+pip install fastapi uvicorn pandas scikit-learn xgboost understat soccerdata apscheduler anthropic requests sqlalchemy
+npm create vite@latest frontend -- --template react
+npm install recharts tailwindcss axios
+PHASE 2: Historical Data Ingestion
+⏱ ~3 days
+The goal is to build a training dataset of past Bundesliga matches (2015/16 → 2023/24 seasons). This is done once as a bootstrap step.
+2.1  Sources & What to Fetch
+Source
+What to Fetch
+How
+Seasons
+football-data.co.uk
+Results, goals, home/away
+Download CSV bulk files (no API calls)
+2002–2024
+Understat Python lib
+xG, xGA, shots, deep passes (primary xG source)
+pip install understat, async fetch
+2014–2024
+OpenLigaDB
+Fixtures, standings, form
+REST API, no key needed
+2005–2024
+FBref (soccerdata lib)
+Possession %, shots on target, progressive carries (no rate limit)
+pip install soccerdata, cache locally
+2017–2024
+API-Football (100/day)
+Lineups + confirmed injuries/suspensions ONLY
+Used sparingly — fetch once per matchday eve
+Current season
+2.2  Database Schema (SQLite)
+Table: matches
+  match_id        TEXT PRIMARY KEY
+  date            DATE
+  season          TEXT           -- e.g. '2022-23'
+  home_team       TEXT
+  away_team       TEXT
+  home_goals      INT
+  away_goals      INT
+  result          INT            -- 0=away win, 1=draw, 2=home win
+  home_xg         REAL
+  away_xg         REAL
+  home_possession REAL
+  away_possession REAL
+  home_shots_ot   INT
+  away_shots_ot   INT
+  source          TEXT           -- which API provided the row
+  is_home_promoted  BOOL         -- home team in first season after promotion
+  is_away_promoted  BOOL         -- away team in first season after promotion
+  h2h_data_quality  TEXT         -- 'full' | 'partial' | 'none'
+Table: teams
+  team_id      TEXT PRIMARY KEY
+  name         TEXT
+  elo          REAL    -- updated after every match
+  promoted_from TEXT   -- 'BL2' if promoted, null if established
+  first_bl_season TEXT -- e.g. '2024-25', used for cold start routing
+PHASE 3: Feature Engineering
+⏱ ~2 days
+For every match row, compute rolling features using ONLY data from before that match. This is the most important rule to avoid data leakage.
+3.1  Feature List
+Feature
+Description
+Source
+home_elo / away_elo
+ELO rating at time of match
+Computed (elo.py)
+elo_diff
+home_elo minus away_elo
+Derived
+home_form_pts
+Points per game, last 5 matches
+OpenLigaDB
+away_form_pts
+Points per game, last 5 matches
+OpenLigaDB
+home_xg_avg5
+Average xG scored, last 5
+Understat (primary)
+away_xg_avg5
+Average xG scored, last 5
+Understat (primary)
+home_xga_avg5
+Average xG conceded, last 5
+Understat (primary)
+away_xga_avg5
+Average xG conceded, last 5
+Understat (primary)
+home_possession_avg
+Average possession %, last 5
+FBref via soccerdata
+home_shots_ot_avg
+Average shots on target, last 5
+FBref via soccerdata
+h2h_home_wins
+Home team wins in last 5 H2H (see cold start rules below)
+OpenLigaDB
+h2h_draws
+Draws in last 5 H2H (see cold start rules below)
+OpenLigaDB
+h2h_data_quality
+Data quality flag: 'full' / 'partial' / 'none'
+Derived
+days_rest_home
+Days since home team's last match
+OpenLigaDB
+days_rest_away
+Days since away team's last match
+OpenLigaDB
+home_is_home_record
+Home team's win % when playing at home
+OpenLigaDB
+away_is_away_record
+Away team's win % when playing away
+OpenLigaDB
+is_home_promoted
+Home team in first BL season after promotion
+teams table
+is_away_promoted
+Away team in first BL season after promotion
+teams table
+home_bl2_xg_avg5
+Fallback: xG from BL2 last season if promoted (×0.85 discount)
+Understat
+away_bl2_xg_avg5
+Fallback: xG from BL2 last season if promoted (×0.85 discount)
+Understat
+3.2  Cold Start Handling (Newly Promoted Teams)
+Promoted teams (e.g. Holstein Kiel entering Bundesliga) have no top-flight history. The pipeline must detect and handle this before building any feature row, otherwise features will be missing or misleadingly filled with zeros.
+ELO — Promoted Team Starting Rating
+Do NOT start promoted teams at the default 1500. Use their Bundesliga 2 finish to set a realistic initial ELO:
+# Bottom of Bundesliga ≈ ELO 1380
+# BL2 champion gets close to the weakest BL1 side
+promoted_elo = 1350 + (bl2_final_position_from_bottom * 10)
+# e.g. BL2 champion (18th from bottom) → 1350 + 180 = 1530
+H2H Features — Tiered Fallback
+H2H Bundesliga matches available
+Strategy
+5 or more
+Use actual H2H stats — full confidence
+2 to 4
+Use available H2H but multiply by (n / 5) to weight down confidence
+0 to 1
+Drop H2H features entirely. Fill with Bundesliga average home win rate (~43%)
+xG & Form — Bundesliga 2 Fallback
+If a team has < 3 Bundesliga matches (i.e. newly promoted), fall back to their Bundesliga 2 stats from last season
+Apply a promotion discount factor of 0.85 to all BL2 stats — BL2 is weaker, so raw stats inflate
+Use the is_home_promoted and home_bl2_xg_avg5 columns to signal this in the feature row
+Understat tracks Bundesliga 2, so this data is available without any extra API
+LLM Model — Best Tool for Cold Start
+The LLM has no minimum data requirement. Explicitly include in the prompt that a team is newly promoted, their BL2 finishing stats, and any known signings. Claude reasons qualitatively where statistical models cannot.
+3.3  No-Leakage Rule
+When computing rolling features for a match on date D, ONLY use matches with date < D. Use pandas shift(1) to ensure the current match is never included in its own features.
+PHASE 4: Model Training
+⏱ ~4 days
+Model 1 — ELO Rating System
+Start all teams at 1500
+K-factor: 32 for regular season, 40 for high-stakes matches
+Update ratings after every result using standard ELO formula
+ELO naturally handles long-term strength — no retraining needed, it's always live
+Output: win/draw/loss probabilities derived from rating difference
+Model 2 — Logistic Regression
+Features: form_pts, elo_diff, h2h stats, home/away record
+Multinomial (3 classes: home win, draw, away win)
+Apply recency weighting: sample_weight = exp(-0.001 * days_ago)
+Regularization: C=0.1 (L2), prevents overfitting on limited data
+Output: [P(home win), P(draw), P(away win)]
+Model 3 — XGBoost
+Full feature set: all 15 features from Phase 3
+n_estimators=300, max_depth=4, learning_rate=0.05
+Use sample_weight for recency (same decay as LogReg)
+Tune with 5-fold time-series cross-validation (TimeSeriesSplit) — never shuffle
+Output: [P(home win), P(draw), P(away win)]
+Model 4 — LLM Reasoning (Claude API)
+Prompt Claude with a structured JSON summary of both teams. Example prompt structure:
+You are a Bundesliga analyst. Given the following pre-match data, predict
+the outcome probabilities as JSON: {"home_win": float, "draw": float, "away_win": float}
+Home team: {name}, ELO: {elo}, Last 5: {form}, xG avg: {xg}
+Away team: {name}, ELO: {elo}, Last 5: {form}, xG avg: {xg}
+Context: {injuries, manager changes, streak, H2H}
+Respond ONLY with the JSON object. No explanation.
+Ensemble Weighting
+Model
+Initial Weight
+Notes
+ELO
+15%
+Stable long-term signal, less reactive
+Logistic Regression
+25%
+Fast, well-calibrated baseline
+XGBoost
+35%
+Most accurate on historical backtest
+LLM (Claude)
+25%
+Handles sudden drift and narrative context
+Re-tune weights quarterly using Brier score on recent matches. Later, replace weighted average with a stacking meta-model once you have 300+ predictions logged.
+PHASE 5: Concept Drift Handling
+⏱ Ongoing
+5.1  Retrain Schedule
+Trigger
+Action
+Automated?
+After every matchday
+Recompute ELO for all played matches
+Yes (APScheduler)
+Every 4–6 weeks
+Retrain LogReg + XGBoost on rolling 3-year window
+Yes (APScheduler)
+Every season end
+Full retrain + hyperparameter tuning + weight rebalance
+Manual
+Manager sacked / star injury
+LLM context updated immediately via prompt
+Automatic
+5.2  Calibration Monitoring
+After each matchday, log predicted probabilities vs actual outcomes
+Compute Brier score weekly — alert if it degrades more than 15% vs baseline
+Plot calibration curves on the website accuracy tracker page
+If XGBoost Brier score spikes, trigger emergency retrain
+5.3  Rolling Training Window
+# Only use the last 3 seasons for training
+cutoff = today - pd.DateOffset(years=3)
+train_df = df[df['date'] >= cutoff]
+# Apply exponential decay weights
+train_df['weight'] = np.exp(-0.001 * (today - train_df['date']).dt.days)
+PHASE 6: FastAPI Backend
+⏱ ~3 days
+6.1  Endpoints
+Method
+Endpoint
+Returns
+GET
+/fixtures/upcoming
+Next 7 days of Bundesliga matches
+GET
+/prediction/{match_id}
+Ensemble prediction + per-model breakdown
+GET
+/standings
+Live table + ELO ratings
+GET
+/accuracy
+Historical accuracy, Brier scores, calibration data
+GET
+/h2h/{team1}/{team2}
+Head-to-head history + stats
+POST
+/retrain
+Trigger manual model retrain (admin only)
+6.2  Scheduled Jobs (APScheduler)
+Daily 6 AM: Fetch yesterday's results from OpenLigaDB, update DB, recompute ELO
+Daily 6 AM: Fetch FBref possession + shots via soccerdata (cache locally — never re-fetch existing data)
+Every 6 weeks: Retrain LogReg + XGBoost on rolling 3-year window, log new Brier score
+Every matchday eve: Fetch lineups + injuries from API-Football (only time API-Football is called), pre-compute LLM predictions, cache to DB
+PHASE 7: React Frontend
+⏱ ~4 days
+7.1  Pages & Components
+Page
+Key Components
+Data Source
+Home / Fixtures
+Match prediction cards, confidence bars, date filter
+/fixtures/upcoming
+Match Detail
+Per-model probability breakdown, LLM reasoning text, H2H mini-table
+/prediction/{id}
+League Table
+Official standings alongside your ELO column
+/standings
+Accuracy Tracker
+Rolling accuracy chart, Brier score timeline, calibration curve
+/accuracy
+Head to Head
+Historical results, goal stats, past predictions
+/h2h/{t1}/{t2}
+7.2  Key UI Elements
+Confidence bars: color-coded (green = high confidence, yellow = uncertain, red = low confidence)
+Model agreement badge: show when all 4 models agree vs when they diverge
+LLM reasoning card: display Claude's written explanation on match detail page
+Drift alert banner: show when Brier score has degraded — triggers user awareness
+PHASE 8: Testing & Backtesting
+⏱ ~2 days
+Backtest on 2023/24 season: train on 2020–2023, predict all 2023/24 matches
+Metrics to track: accuracy (% correct outcome), Brier score, log loss, ROI on draw predictions
+Compare ensemble vs individual models — ensemble should outperform each
+Unit test feature engineering: verify no future data leaks into any rolling window
+Integration test: hit /prediction endpoint for a known past match and verify response shape
+PHASE 9: Deployment
+⏱ ~2 days
+9.1  Recommended: Railway (Free Tier)
+Deploy FastAPI backend as one service
+Deploy React frontend as static site (or Vercel for frontend)
+SQLite DB stored as a persistent volume on Railway
+Set environment variables: ANTHROPIC_API_KEY, API_FOOTBALL_KEY
+9.2  Production Checklist
+CORS configured on FastAPI to allow frontend domain
+Predictions cached to DB — never call LLM in real-time on page load
+API-Football calls batched and rate-limited to stay within 100/day
+Brier score monitoring dashboard visible on Accuracy Tracker page
+PHASE 10: Full Timeline Summary
+⏱ ~6 weeks
+Week
+Focus
+Deliverable
+Week 1
+Phases 1–2
+Repo set up, historical data in SQLite DB
+Week 2
+Phase 3
+Feature engineering pipeline, clean training dataset
+Week 3
+Phase 4 (Models 1–3)
+ELO + LogReg + XGBoost trained, backtested
+Week 4
+Phase 4 (LLM) + Phase 5
+LLM integration, ensemble voting, drift monitoring
+Week 5
+Phases 6–7
+FastAPI backend + React frontend connected
+Week 6
+Phases 8–9
+Backtesting complete, deployed on Railway
+🤖 Notes for Claude Agent
+When working on this project as an agent, follow these rules:
+Always check that rolling features use shift(1) or date < match_date — never allow the current match's stats into its own feature row.
+Never shuffle training data when using TimeSeriesSplit — older matches must always be in train, newer in validation.
+Cache all LLM calls to the DB before matchday — never call Claude API on page load or per-request.
+When adding new features, add them to the features table in Phase 3 of this document and retrain all models.
+API-Football is ONLY for lineups and injuries — never use it for possession or shots. FBref (soccerdata) handles those with no rate limit.
+FBref via soccerdata: always set data_dir to a local cache folder and add a ~1s delay between requests to avoid soft-blocking.
+ELO must be recomputed in chronological order — always sort by date ASC before processing.
+For newly promoted teams: check is_home_promoted / is_away_promoted before building features. Route to BL2 fallback stats and apply 0.85 discount factor.
+For H2H features: check h2h_data_quality. If 'none', replace H2H features with Bundesliga average home win rate (0.43). If 'partial', weight down by (n / 5).
+Promoted teams ELO: never start at 1500. Compute from BL2 finish: 1350 + (position_from_bottom × 10).
+When the Brier score degrades >15% from baseline, log a warning and schedule a retrain job.
+Ensemble weights are in ensemble.py as constants — update them after each quarterly review.
+LLM model: use claude-sonnet-4-20250514, max_tokens=300, temperature=0 for deterministic predictions.
+For cold start matches (promoted team, thin H2H), always increase the LLM ensemble weight to 0.40 and reduce XGBoost to 0.20 — statistical models are least reliable here.
+— End of Blueprint —

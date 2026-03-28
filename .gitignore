@@ -1,0 +1,79 @@
+# =========================
+# Python / Virtual Env
+# =========================
+venv/
+.env/
+.env.*
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# =========================
+# Jupyter Notebooks
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# OS Files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Environment Variables
+# =========================
+.env
+.env.local
+
+# =========================
+# Data Files (Prevent large commits)
+# =========================
+data/*.db
+data/*.sqlite
+data/*.sqlite3
+
+# Ignore large datasets (safety >50MB)
+*.csv
+*.parquet
+*.feather
+
+# But allow small sample data if needed
+!data/sample_*.csv
+
+# =========================
+# Model Files
+# =========================
+*.pkl
+*.joblib
+*.model
+
+# =========================
+# Frontend (React/Vite)
+# =========================
+frontend/node_modules/
+frontend/dist/
+
+# =========================
+# Build / Cache
+# =========================
+.cache/
+dist/
+build/
+
+# =========================
+# IDE
+# =========================
+.vscode/
+.idea/
+
+# =========================
+# Misc
+# =========================
+*.tmp
+*.bak
