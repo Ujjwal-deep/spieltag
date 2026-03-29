@@ -54,10 +54,21 @@ data/*.sqlite3
 *.model
 
 # =========================
-# Frontend (React/Vite)
+# Frontend (React/Vite - Dashboard)
 # =========================
-frontend/node_modules/
-frontend/dist/
+dashboard/node_modules/
+dashboard/dist/
+dashboard/.env
+dashboard/.env.local
+dashboard/.env.development.local
+dashboard/.env.test.local
+dashboard/.env.production.local
+dashboard/npm-debug.log*
+dashboard/yarn-debug.log*
+dashboard/yarn-error.log*
+dashboard/.vercel/
+dashboard/stats.html
+
 
 # =========================
 # Build / Cache

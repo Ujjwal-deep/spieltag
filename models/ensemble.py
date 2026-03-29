@@ -12,6 +12,7 @@ from elo import predict_elo
 from poisson_model import predict_poisson
 from logistic import get_logistic_model, select_logistic_features
 from xgboost_model import XGBoostDecayModel
+import joblib
 
 logging.basicConfig(level=logging.INFO, format='%(message)s')
 logger = logging.getLogger(__name__)
@@ -167,5 +168,10 @@ if __name__ == "__main__":
 
     _ = evaluate_set(X_val, y_val, "Validation")
     _ = evaluate_set(X_test, y_test, "Test")
+
+    logger.info("Saving trained models to disk...")
+    joblib.dump(final_log_model, os.path.join(SAVED_MODELS_PATH, "final_log_model.joblib"))
+    joblib.dump(final_xgb_model, os.path.join(SAVED_MODELS_PATH, "final_xgb_model.joblib"))
+    joblib.dump(meta_model, os.path.join(SAVED_MODELS_PATH, "meta_model.joblib"))
 
     logger.info("V2 Execution completed securely.")
