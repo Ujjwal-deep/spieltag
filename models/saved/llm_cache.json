@@ -1,0 +1,3062 @@
+{
+    "2022-08-05_EinFrankfurt_BayernMunich": {
+        "home_win": 0.05,
+        "draw": 0.15,
+        "away_win": 0.8
+    },
+    "2022-08-06_Augsburg_Freiburg": {
+        "home_win": 0.23,
+        "draw": 0.33,
+        "away_win": 0.44
+    },
+    "2022-08-06_Bochum_Mainz": {
+        "home_win": 0.23,
+        "draw": 0.0,
+        "away_win": 0.77
+    },
+    "2022-08-06_M'gladbach_Hoffenheim": {
+        "home_win": 0.73,
+        "draw": 0.16,
+        "away_win": 0.11
+    },
+    "2022-08-06_UnionBerlin_Hertha": {
+        "home_win": 0.73,
+        "draw": 0.16,
+        "away_win": 0.11
+    },
+    "2022-08-06_Wolfsburg_WerderBremen": {
+        "home_win": 0.43,
+        "draw": 0.28,
+        "away_win": 0.29
+    },
+    "2022-08-06_Dortmund_Leverkusen": {
+        "home_win": 0.43,
+        "draw": 0.26,
+        "away_win": 0.31
+    },
+    "2022-08-07_Stuttgart_RBLeipzig": {
+        "home_win": 0.15,
+        "draw": 0.25,
+        "away_win": 0.6
+    },
+    "2022-08-07_FCKoln_Schalke04": {
+        "home_win": 0.43,
+        "draw": 0.28,
+        "away_win": 0.29
+    },
+    "2022-08-12_Freiburg_Dortmund": {
+        "home_win": 0.23,
+        "draw": 0.25,
+        "away_win": 0.52
+    },
+    "2022-08-13_Hertha_EinFrankfurt": {
+        "home_win": 0.22,
+        "draw": 0.26,
+        "away_win": 0.52
+    },
+    "2022-08-13_Hoffenheim_Bochum": {
+        "home_win": 0.23,
+        "draw": 0.33,
+        "away_win": 0.44
+    },
+    "2022-08-13_Leverkusen_Augsburg": {
+        "home_win": 0.73,
+        "draw": 0.16,
+        "away_win": 0.11
+    },
+    "2022-08-13_RBLeipzig_FCKoln": {
+        "home_win": 0.35,
+        "draw": 0.25,
+        "away_win": 0.4
+    },
+    "2022-08-13_WerderBremen_Stuttgart": {
+        "home_win": 0.32,
+        "draw": 0.36,
+        "away_win": 0.32
+    },
+    "2022-08-13_Schalke04_M'gladbach": {
+        "home_win": 0.23,
+        "draw": 0.28,
+        "away_win": 0.49
+    },
+    "2022-08-14_Mainz_UnionBerlin": {
+        "home_win": 0.23,
+        "draw": 0.32,
+        "away_win": 0.45
+    },
+    "2022-08-14_BayernMunich_Wolfsburg": {
+        "home_win": 0.73,
+        "draw": 0.16,
+        "away_win": 0.11
+    },
+    "2022-08-19_M'gladbach_Hertha": {
+        "home_win": 0.83,
+        "draw": 0.12,
+        "away_win": 0.05
+    },
+    "2022-08-20_Augsburg_Mainz": {
+        "home_win": 0.23,
+        "draw": 0.23,
+        "away_win": 0.54
+    },
+    "2022-08-20_Dortmund_WerderBremen": {
+        "home_win": 0.73,
+        "draw": 0.16,
+        "away_win": 0.11
+    },
+    "2022-08-20_Leverkusen_Hoffenheim": {
+        "home_win": 0.73,
+        "draw": 0.16,
+        "away_win": 0.11
+    },
+    "2022-08-20_Stuttgart_Freiburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-08-20_Wolfsburg_Schalke04": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-08-20_UnionBerlin_RBLeipzig": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-08-21_EinFrankfurt_FCKoln": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-08-21_Bochum_BayernMunich": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-08-26_Freiburg_Bochum": {
+        "home_win": 0.64,
+        "draw": 0.16,
+        "away_win": 0.2
+    },
+    "2022-08-27_Hertha_Dortmund": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-08-27_Hoffenheim_Augsburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-08-27_Mainz_Leverkusen": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-08-27_RBLeipzig_Wolfsburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-08-27_Schalke04_UnionBerlin": {
+        "home_win": 0.15,
+        "draw": 0.25,
+        "away_win": 0.6
+    },
+    "2022-08-27_BayernMunich_M'gladbach": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-08-28_FCKoln_Stuttgart": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-08-28_WerderBremen_EinFrankfurt": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-09-02_Dortmund_Hoffenheim": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-09-03_Bochum_WerderBremen": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-09-03_Leverkusen_Freiburg": {
+        "home_win": 0.43,
+        "draw": 0.26,
+        "away_win": 0.31
+    },
+    "2022-09-03_Stuttgart_Schalke04": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-09-03_UnionBerlin_BayernMunich": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-09-03_Wolfsburg_FCKoln": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-09-03_EinFrankfurt_RBLeipzig": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-09-04_Augsburg_Hertha": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-09-04_M'gladbach_Mainz": {
+        "home_win": 0.63,
+        "draw": 0.24,
+        "away_win": 0.13
+    },
+    "2022-09-09_WerderBremen_Augsburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-09-10_BayernMunich_Stuttgart": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-09-10_EinFrankfurt_Wolfsburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-09-10_Hertha_Leverkusen": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-09-10_Hoffenheim_Mainz": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-09-10_RBLeipzig_Dortmund": {
+        "home_win": 0.23,
+        "draw": 0.25,
+        "away_win": 0.52
+    },
+    "2022-09-10_Schalke04_Bochum": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-09-11_FCKoln_UnionBerlin": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-09-11_Freiburg_M'gladbach": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-09-16_Mainz_Hertha": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-09-17_Augsburg_BayernMunich": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-09-17_Dortmund_Schalke04": {
+        "home_win": 0.64,
+        "draw": 0.24,
+        "away_win": 0.12
+    },
+    "2022-09-17_Leverkusen_WerderBremen": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-09-17_Stuttgart_EinFrankfurt": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-09-17_M'gladbach_RBLeipzig": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-09-18_UnionBerlin_Wolfsburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-09-18_Bochum_FCKoln": {
+        "home_win": 0.05,
+        "draw": 0.25,
+        "away_win": 0.7
+    },
+    "2022-09-18_Hoffenheim_Freiburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-09-30_BayernMunich_Leverkusen": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-10-01_EinFrankfurt_UnionBerlin": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-10-01_FCKoln_Dortmund": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-10-01_Freiburg_Mainz": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-10-01_RBLeipzig_Bochum": {
+        "home_win": 0.8300000000000001,
+        "draw": 0.08000000000000002,
+        "away_win": 0.09000000000000001
+    },
+    "2022-10-01_Wolfsburg_Stuttgart": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-10-01_WerderBremen_M'gladbach": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-10-02_Hertha_Hoffenheim": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-10-02_Schalke04_Augsburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-10-07_Hoffenheim_WerderBremen": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-10-08_Augsburg_Wolfsburg": {
+        "home_win": 0.32,
+        "draw": 0.33,
+        "away_win": 0.35
+    },
+    "2022-10-08_Bochum_EinFrankfurt": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-10-08_Leverkusen_Schalke04": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-10-08_Mainz_RBLeipzig": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-10-08_Dortmund_BayernMunich": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-10-09_M'gladbach_FCKoln": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-10-09_Hertha_Freiburg": {
+        "home_win": 0.15,
+        "draw": 0.25,
+        "away_win": 0.6
+    },
+    "2022-10-09_Stuttgart_UnionBerlin": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-10-14_Schalke04_Hoffenheim": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-10-15_EinFrankfurt_Leverkusen": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-10-15_Stuttgart_Bochum": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-10-15_WerderBremen_Mainz": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-10-15_Wolfsburg_M'gladbach": {
+        "home_win": 0.23,
+        "draw": 0.43,
+        "away_win": 0.34
+    },
+    "2022-10-15_RBLeipzig_Hertha": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-10-16_FCKoln_Augsburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-10-16_UnionBerlin_Dortmund": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-10-16_BayernMunich_Freiburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-10-21_Mainz_FCKoln": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-10-22_Augsburg_RBLeipzig": {
+        "home_win": 0.23,
+        "draw": 0.33,
+        "away_win": 0.44
+    },
+    "2022-10-22_Dortmund_Stuttgart": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-10-22_Freiburg_WerderBremen": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-10-22_Hoffenheim_BayernMunich": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-10-22_Leverkusen_Wolfsburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-10-22_M'gladbach_EinFrankfurt": {
+        "home_win": 0.43,
+        "draw": 0.28,
+        "away_win": 0.29
+    },
+    "2022-10-23_Bochum_UnionBerlin": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-10-23_Hertha_Schalke04": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-10-28_WerderBremen_Hertha": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-10-29_BayernMunich_Mainz": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-10-29_RBLeipzig_Leverkusen": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-10-29_Stuttgart_Augsburg": {
+        "home_win": 0.23,
+        "draw": 0.25,
+        "away_win": 0.52
+    },
+    "2022-10-29_Wolfsburg_Bochum": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-10-29_EinFrankfurt_Dortmund": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-10-30_UnionBerlin_M'gladbach": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-10-30_Schalke04_Freiburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-10-30_FCKoln_Hoffenheim": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-11-04_M'gladbach_Stuttgart": {
+        "home_win": 0.32,
+        "draw": 0.36,
+        "away_win": 0.32
+    },
+    "2022-11-05_Augsburg_EinFrankfurt": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-11-05_Dortmund_Bochum": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-11-05_Hertha_BayernMunich": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-11-05_Hoffenheim_RBLeipzig": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-11-05_Mainz_Wolfsburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-11-05_WerderBremen_Schalke04": {
+        "home_win": 0.83,
+        "draw": 0.12,
+        "away_win": 0.05
+    },
+    "2022-11-06_Leverkusen_UnionBerlin": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-11-06_Freiburg_FCKoln": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-11-08_Wolfsburg_Dortmund": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-11-08_BayernMunich_WerderBremen": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-11-08_Bochum_M'gladbach": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-11-08_Stuttgart_Hertha": {
+        "home_win": 0.55,
+        "draw": 0.25,
+        "away_win": 0.2
+    },
+    "2022-11-09_FCKoln_Leverkusen": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-11-09_EinFrankfurt_Hoffenheim": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-11-09_RBLeipzig_Freiburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-11-09_Schalke04_Mainz": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-11-09_UnionBerlin_Augsburg": {
+        "home_win": 0.73,
+        "draw": 0.16,
+        "away_win": 0.11
+    },
+    "2022-11-11_M'gladbach_Dortmund": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-11-12_Augsburg_Bochum": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-11-12_Hertha_FCKoln": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-11-12_Hoffenheim_Wolfsburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-11-12_Leverkusen_Stuttgart": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-11-12_WerderBremen_RBLeipzig": {
+        "home_win": 0.15,
+        "draw": 0.25,
+        "away_win": 0.6
+    },
+    "2022-11-12_Schalke04_BayernMunich": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-11-13_Mainz_EinFrankfurt": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2022-11-13_Freiburg_UnionBerlin": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-01-20_RBLeipzig_BayernMunich": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-01-21_Bochum_Hertha": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-01-21_EinFrankfurt_Schalke04": {
+        "home_win": 0.8300000000000001,
+        "draw": 0.08000000000000002,
+        "away_win": 0.09000000000000001
+    },
+    "2023-01-21_Stuttgart_Mainz": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-01-21_UnionBerlin_Hoffenheim": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-01-21_Wolfsburg_Freiburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-01-21_FCKoln_WerderBremen": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-01-22_Dortmund_Augsburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-01-22_M'gladbach_Leverkusen": {
+        "home_win": 0.23,
+        "draw": 0.33,
+        "away_win": 0.44
+    },
+    "2023-01-24_Schalke04_RBLeipzig": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-01-24_BayernMunich_FCKoln": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-01-24_Hertha_Wolfsburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-01-24_Hoffenheim_Stuttgart": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-01-25_Mainz_Dortmund": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-01-25_Augsburg_M'gladbach": {
+        "home_win": 0.23,
+        "draw": 0.25,
+        "away_win": 0.52
+    },
+    "2023-01-25_Freiburg_EinFrankfurt": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-01-25_Leverkusen_Bochum": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-01-25_WerderBremen_UnionBerlin": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-01-27_RBLeipzig_Stuttgart": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-01-28_Freiburg_Augsburg": {
+        "home_win": 0.63,
+        "draw": 0.24,
+        "away_win": 0.13
+    },
+    "2023-01-28_Hertha_UnionBerlin": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-01-28_Hoffenheim_M'gladbach": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-01-28_Mainz_Bochum": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-01-28_WerderBremen_Wolfsburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-01-28_BayernMunich_EinFrankfurt": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-01-29_Schalke04_FCKoln": {
+        "home_win": 0.15,
+        "draw": 0.35,
+        "away_win": 0.5
+    },
+    "2023-01-29_Leverkusen_Dortmund": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-02-03_Augsburg_Leverkusen": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-02-04_Bochum_Hoffenheim": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-02-04_Dortmund_Freiburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-02-04_EinFrankfurt_Hertha": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-02-04_FCKoln_RBLeipzig": {
+        "home_win": 0.15,
+        "draw": 0.25,
+        "away_win": 0.6
+    },
+    "2023-02-04_UnionBerlin_Mainz": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-02-04_M'gladbach_Schalke04": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-02-05_Stuttgart_WerderBremen": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-02-05_Wolfsburg_BayernMunich": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-02-10_Schalke04_Wolfsburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-02-11_BayernMunich_Bochum": {
+        "home_win": 0.73,
+        "draw": 0.15,
+        "away_win": 0.12
+    },
+    "2023-02-11_Freiburg_Stuttgart": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-02-11_Hoffenheim_Leverkusen": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-02-11_Mainz_Augsburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-02-11_WerderBremen_Dortmund": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-02-11_RBLeipzig_UnionBerlin": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-02-12_Hertha_M'gladbach": {
+        "home_win": 0.15,
+        "draw": 0.25,
+        "away_win": 0.6
+    },
+    "2023-02-12_FCKoln_EinFrankfurt": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-02-17_Augsburg_Hoffenheim": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-02-18_Bochum_Freiburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-02-18_M'gladbach_BayernMunich": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-02-18_Stuttgart_FCKoln": {
+        "home_win": 0.15,
+        "draw": 0.25,
+        "away_win": 0.6
+    },
+    "2023-02-18_Wolfsburg_RBLeipzig": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-02-18_EinFrankfurt_WerderBremen": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-02-19_UnionBerlin_Schalke04": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-02-19_Dortmund_Hertha": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-02-19_Leverkusen_Mainz": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-02-24_Mainz_M'gladbach": {
+        "home_win": 0.43,
+        "draw": 0.31,
+        "away_win": 0.26
+    },
+    "2023-02-25_FCKoln_Wolfsburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-02-25_Hertha_Augsburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-02-25_Hoffenheim_Dortmund": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-02-25_RBLeipzig_EinFrankfurt": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-02-25_WerderBremen_Bochum": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-02-25_Schalke04_Stuttgart": {
+        "home_win": 0.23,
+        "draw": 0.43,
+        "away_win": 0.34
+    },
+    "2023-02-26_Freiburg_Leverkusen": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-02-26_BayernMunich_UnionBerlin": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-03-03_Dortmund_RBLeipzig": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-03-04_Augsburg_WerderBremen": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-03-04_Bochum_Schalke04": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-03-04_Mainz_Hoffenheim": {
+        "home_win": 0.83,
+        "draw": 0.12,
+        "away_win": 0.05
+    },
+    "2023-03-04_M'gladbach_Freiburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-03-04_UnionBerlin_FCKoln": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-03-04_Stuttgart_BayernMunich": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-03-05_Leverkusen_Hertha": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-03-05_Wolfsburg_EinFrankfurt": {
+        "home_win": 0.23,
+        "draw": 0.33,
+        "away_win": 0.44
+    },
+    "2023-03-10_FCKoln_Bochum": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-03-11_BayernMunich_Augsburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-03-11_EinFrankfurt_Stuttgart": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-03-11_Hertha_Mainz": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-03-11_RBLeipzig_M'gladbach": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-03-11_Schalke04_Dortmund": {
+        "home_win": 0.05,
+        "draw": 0.15,
+        "away_win": 0.8
+    },
+    "2023-03-12_Freiburg_Hoffenheim": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-03-12_WerderBremen_Leverkusen": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-03-12_Wolfsburg_UnionBerlin": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-03-17_M'gladbach_WerderBremen": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-03-18_Augsburg_Schalke04": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-03-18_Bochum_RBLeipzig": {
+        "home_win": 0.05,
+        "draw": 0.05,
+        "away_win": 0.9
+    },
+    "2023-03-18_Hoffenheim_Hertha": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-03-18_Stuttgart_Wolfsburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-03-18_Dortmund_FCKoln": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-03-19_UnionBerlin_EinFrankfurt": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-03-19_Leverkusen_BayernMunich": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-03-19_Mainz_Freiburg": {
+        "home_win": 0.32,
+        "draw": 0.36,
+        "away_win": 0.32
+    },
+    "2023-03-31_EinFrankfurt_Bochum": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-04-01_Freiburg_Hertha": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-04-01_RBLeipzig_Mainz": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-04-01_Schalke04_Leverkusen": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-04-01_UnionBerlin_Stuttgart": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-04-01_Wolfsburg_Augsburg": {
+        "home_win": 0.55,
+        "draw": 0.25,
+        "away_win": 0.2
+    },
+    "2023-04-01_BayernMunich_Dortmund": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-04-02_FCKoln_M'gladbach": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-04-02_WerderBremen_Hoffenheim": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-04-08_Augsburg_FCKoln": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-04-08_Dortmund_UnionBerlin": {
+        "home_win": 0.63,
+        "draw": 0.24,
+        "away_win": 0.13
+    },
+    "2023-04-08_Freiburg_BayernMunich": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-04-08_Leverkusen_EinFrankfurt": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-04-08_Mainz_WerderBremen": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-04-08_Hertha_RBLeipzig": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-04-09_M'gladbach_Wolfsburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-04-09_Bochum_Stuttgart": {
+        "home_win": 0.64,
+        "draw": 0.24,
+        "away_win": 0.12
+    },
+    "2023-04-09_Hoffenheim_Schalke04": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-04-14_Schalke04_Hertha": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-04-15_BayernMunich_Hoffenheim": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-04-15_FCKoln_Mainz": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-04-15_RBLeipzig_Augsburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-04-15_Stuttgart_Dortmund": {
+        "home_win": 0.05,
+        "draw": 0.15,
+        "away_win": 0.8
+    },
+    "2023-04-15_EinFrankfurt_M'gladbach": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-04-16_WerderBremen_Freiburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-04-16_UnionBerlin_Bochum": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-04-16_Wolfsburg_Leverkusen": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-04-21_Augsburg_Stuttgart": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-04-22_Bochum_Wolfsburg": {
+        "home_win": 0.23,
+        "draw": 0.15,
+        "away_win": 0.62
+    },
+    "2023-04-22_Hertha_WerderBremen": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-04-22_Hoffenheim_FCKoln": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-04-22_Mainz_BayernMunich": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-04-22_Dortmund_EinFrankfurt": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-04-23_Freiburg_Schalke04": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-04-23_Leverkusen_RBLeipzig": {
+        "home_win": 0.43,
+        "draw": 0.28,
+        "away_win": 0.29
+    },
+    "2023-04-23_M'gladbach_UnionBerlin": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-04-28_Bochum_Dortmund": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-04-29_EinFrankfurt_Augsburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-04-29_FCKoln_Freiburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-04-29_RBLeipzig_Hoffenheim": {
+        "home_win": 0.55,
+        "draw": 0.25,
+        "away_win": 0.2
+    },
+    "2023-04-29_Stuttgart_M'gladbach": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-04-29_UnionBerlin_Leverkusen": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-04-29_Schalke04_WerderBremen": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-04-30_BayernMunich_Hertha": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-04-30_Wolfsburg_Mainz": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-05-05_Leverkusen_FCKoln": {
+        "home_win": 0.63,
+        "draw": 0.24,
+        "away_win": 0.13
+    },
+    "2023-05-05_Mainz_Schalke04": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-05-06_Augsburg_UnionBerlin": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-05-06_Freiburg_RBLeipzig": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-05-06_Hertha_Stuttgart": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-05-06_Hoffenheim_EinFrankfurt": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-05-06_M'gladbach_Bochum": {
+        "home_win": 0.55,
+        "draw": 0.25,
+        "away_win": 0.2
+    },
+    "2023-05-06_WerderBremen_BayernMunich": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-05-07_Dortmund_Wolfsburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-05-12_FCKoln_Hertha": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-05-13_BayernMunich_Schalke04": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-05-13_Bochum_Augsburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-05-13_EinFrankfurt_Mainz": {
+        "home_win": 0.23,
+        "draw": 0.38,
+        "away_win": 0.39
+    },
+    "2023-05-13_UnionBerlin_Freiburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-05-13_Wolfsburg_Hoffenheim": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-05-13_Dortmund_M'gladbach": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-05-14_Stuttgart_Leverkusen": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-05-14_RBLeipzig_WerderBremen": {
+        "home_win": 0.8300000000000001,
+        "draw": 0.08000000000000002,
+        "away_win": 0.09000000000000001
+    },
+    "2023-05-19_Freiburg_Wolfsburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-05-20_Hertha_Bochum": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-05-20_Hoffenheim_UnionBerlin": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-05-20_Schalke04_EinFrankfurt": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-05-20_WerderBremen_FCKoln": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-05-20_BayernMunich_RBLeipzig": {
+        "home_win": 0.63,
+        "draw": 0.24,
+        "away_win": 0.13
+    },
+    "2023-05-21_Mainz_Stuttgart": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-05-21_Augsburg_Dortmund": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-05-21_Leverkusen_M'gladbach": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-05-27_Bochum_Leverkusen": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-05-27_Dortmund_Mainz": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-05-27_EinFrankfurt_Freiburg": {
+        "home_win": 0.23,
+        "draw": 0.33,
+        "away_win": 0.44
+    },
+    "2023-05-27_FCKoln_BayernMunich": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-05-27_M'gladbach_Augsburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-05-27_RBLeipzig_Schalke04": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-05-27_Stuttgart_Hoffenheim": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-05-27_UnionBerlin_WerderBremen": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-05-27_Wolfsburg_Hertha": {
+        "home_win": 0.62,
+        "draw": 0.24,
+        "away_win": 0.14
+    },
+    "2023-08-18_WerderBremen_BayernMunich": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-08-19_Augsburg_M'gladbach": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-08-19_Hoffenheim_Freiburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-08-19_Leverkusen_RBLeipzig": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-08-19_Stuttgart_Bochum": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-08-19_Wolfsburg_Heidenheim": {
+        "home_win": 0.55,
+        "draw": 0.25,
+        "away_win": 0.2
+    },
+    "2023-08-19_Dortmund_FCKoln": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-08-20_UnionBerlin_Mainz": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-08-20_EinFrankfurt_Darmstadt": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-08-25_RBLeipzig_Stuttgart": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-08-26_Bochum_Dortmund": {
+        "home_win": 0.05,
+        "draw": 0.15,
+        "away_win": 0.8
+    },
+    "2023-08-26_Darmstadt_UnionBerlin": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-08-26_FCKoln_Wolfsburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-08-26_Freiburg_WerderBremen": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-08-26_Heidenheim_Hoffenheim": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-08-26_M'gladbach_Leverkusen": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-08-27_Mainz_EinFrankfurt": {
+        "home_win": 0.15,
+        "draw": 0.35,
+        "away_win": 0.5
+    },
+    "2023-08-27_BayernMunich_Augsburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-09-01_Dortmund_Heidenheim": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-09-02_Augsburg_Bochum": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-09-02_Hoffenheim_Wolfsburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-09-02_Leverkusen_Darmstadt": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-09-02_Stuttgart_Freiburg": {
+        "home_win": 0.22,
+        "draw": 0.28,
+        "away_win": 0.5
+    },
+    "2023-09-02_WerderBremen_Mainz": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-09-02_M'gladbach_BayernMunich": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-09-03_EinFrankfurt_FCKoln": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-09-03_UnionBerlin_RBLeipzig": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-09-15_BayernMunich_Leverkusen": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-09-16_FCKoln_Hoffenheim": {
+        "home_win": 0.15,
+        "draw": 0.35,
+        "away_win": 0.5
+    },
+    "2023-09-16_Freiburg_Dortmund": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-09-16_Mainz_Stuttgart": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-09-16_RBLeipzig_Augsburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-09-16_Wolfsburg_UnionBerlin": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-09-16_Bochum_EinFrankfurt": {
+        "home_win": 0.23,
+        "draw": 0.25,
+        "away_win": 0.52
+    },
+    "2023-09-17_Heidenheim_WerderBremen": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-09-17_Darmstadt_M'gladbach": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-09-22_Stuttgart_Darmstadt": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-09-23_Augsburg_Mainz": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-09-23_BayernMunich_Bochum": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-09-23_Dortmund_Wolfsburg": {
+        "home_win": 0.55,
+        "draw": 0.25,
+        "away_win": 0.2
+    },
+    "2023-09-23_M'gladbach_RBLeipzig": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-09-23_UnionBerlin_Hoffenheim": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-09-23_WerderBremen_FCKoln": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-09-24_Leverkusen_Heidenheim": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-09-24_EinFrankfurt_Freiburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-09-29_Hoffenheim_Dortmund": {
+        "home_win": 0.23,
+        "draw": 0.33,
+        "away_win": 0.44
+    },
+    "2023-09-30_Bochum_M'gladbach": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-09-30_FCKoln_Stuttgart": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-09-30_Heidenheim_UnionBerlin": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-09-30_Mainz_Leverkusen": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-09-30_Wolfsburg_EinFrankfurt": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-09-30_RBLeipzig_BayernMunich": {
+        "home_win": 0.23,
+        "draw": 0.28,
+        "away_win": 0.49
+    },
+    "2023-10-01_Darmstadt_WerderBremen": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-10-01_Freiburg_Augsburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-10-06_M'gladbach_Mainz": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-10-07_Augsburg_Darmstadt": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-10-07_Dortmund_UnionBerlin": {
+        "home_win": 0.8300000000000001,
+        "draw": 0.08000000000000002,
+        "away_win": 0.09000000000000001
+    },
+    "2023-10-07_RBLeipzig_Bochum": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-10-07_Stuttgart_Wolfsburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-10-07_WerderBremen_Hoffenheim": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-10-08_Leverkusen_FCKoln": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-10-08_BayernMunich_Freiburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-10-08_EinFrankfurt_Heidenheim": {
+        "home_win": 0.43,
+        "draw": 0.26,
+        "away_win": 0.31
+    },
+    "2023-10-20_Dortmund_WerderBremen": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-10-21_Darmstadt_RBLeipzig": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-10-21_Freiburg_Bochum": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-10-21_Hoffenheim_EinFrankfurt": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-10-21_UnionBerlin_Stuttgart": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-10-21_Wolfsburg_Leverkusen": {
+        "home_win": 0.15,
+        "draw": 0.35,
+        "away_win": 0.5
+    },
+    "2023-10-21_Mainz_BayernMunich": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-10-22_FCKoln_M'gladbach": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-10-22_Heidenheim_Augsburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-10-27_Bochum_Mainz": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-10-28_Augsburg_Wolfsburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-10-28_BayernMunich_Darmstadt": {
+        "home_win": 0.8300000000000001,
+        "draw": 0.08000000000000002,
+        "away_win": 0.09000000000000001
+    },
+    "2023-10-28_M'gladbach_Heidenheim": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-10-28_Stuttgart_Hoffenheim": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-10-28_WerderBremen_UnionBerlin": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-10-28_RBLeipzig_FCKoln": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-10-29_EinFrankfurt_Dortmund": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-10-29_Leverkusen_Freiburg": {
+        "home_win": 0.64,
+        "draw": 0.24,
+        "away_win": 0.12
+    },
+    "2023-11-03_Darmstadt_Bochum": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-11-04_FCKoln_Augsburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-11-04_Freiburg_M'gladbach": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-11-04_Hoffenheim_Leverkusen": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-11-04_Mainz_RBLeipzig": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-11-04_UnionBerlin_EinFrankfurt": {
+        "home_win": 0.15,
+        "draw": 0.25,
+        "away_win": 0.6
+    },
+    "2023-11-04_Dortmund_BayernMunich": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-11-05_Wolfsburg_WerderBremen": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-11-05_Heidenheim_Stuttgart": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-11-10_M'gladbach_Wolfsburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-11-11_Augsburg_Hoffenheim": {
+        "home_win": 0.32,
+        "draw": 0.26,
+        "away_win": 0.42
+    },
+    "2023-11-11_BayernMunich_Heidenheim": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-11-11_Darmstadt_Mainz": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-11-11_Stuttgart_Dortmund": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-11-11_Bochum_FCKoln": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-11-12_Leverkusen_UnionBerlin": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-11-12_WerderBremen_EinFrankfurt": {
+        "home_win": 0.15,
+        "draw": 0.25,
+        "away_win": 0.6
+    },
+    "2023-11-12_RBLeipzig_Freiburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-11-24_FCKoln_BayernMunich": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-11-25_Dortmund_M'gladbach": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-11-25_Freiburg_Darmstadt": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-11-25_UnionBerlin_Augsburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-11-25_WerderBremen_Leverkusen": {
+        "home_win": 0.05,
+        "draw": 0.25,
+        "away_win": 0.7
+    },
+    "2023-11-25_Wolfsburg_RBLeipzig": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-11-25_EinFrankfurt_Stuttgart": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-11-26_Heidenheim_Bochum": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-11-26_Hoffenheim_Mainz": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-12-01_Darmstadt_FCKoln": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-12-02_Bochum_Wolfsburg": {
+        "home_win": 0.32,
+        "draw": 0.24,
+        "away_win": 0.44
+    },
+    "2023-12-02_M'gladbach_Hoffenheim": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-12-02_RBLeipzig_Heidenheim": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-12-02_Stuttgart_WerderBremen": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-12-03_Mainz_Freiburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-12-03_Leverkusen_Dortmund": {
+        "home_win": 0.63,
+        "draw": 0.24,
+        "away_win": 0.13
+    },
+    "2023-12-03_Augsburg_EinFrankfurt": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-12-08_Hoffenheim_Bochum": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-12-09_EinFrankfurt_BayernMunich": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-12-09_Heidenheim_Darmstadt": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-12-09_UnionBerlin_M'gladbach": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-12-09_WerderBremen_Augsburg": {
+        "home_win": 0.23,
+        "draw": 0.25,
+        "away_win": 0.52
+    },
+    "2023-12-09_Wolfsburg_Freiburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-12-09_Dortmund_RBLeipzig": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-12-10_Stuttgart_Leverkusen": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-12-10_FCKoln_Mainz": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-12-15_M'gladbach_WerderBremen": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-12-16_Augsburg_Dortmund": {
+        "home_win": 0.15,
+        "draw": 0.25,
+        "away_win": 0.6
+    },
+    "2023-12-16_Bochum_UnionBerlin": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-12-16_Darmstadt_Wolfsburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-12-16_Mainz_Heidenheim": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-12-16_RBLeipzig_Hoffenheim": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-12-17_Freiburg_FCKoln": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-12-17_Leverkusen_EinFrankfurt": {
+        "home_win": 0.73,
+        "draw": 0.16,
+        "away_win": 0.11
+    },
+    "2023-12-17_BayernMunich_Stuttgart": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-12-19_WerderBremen_RBLeipzig": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-12-19_Dortmund_Mainz": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-12-19_Hoffenheim_Darmstadt": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-12-20_UnionBerlin_FCKoln": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-12-20_EinFrankfurt_M'gladbach": {
+        "home_win": 0.23,
+        "draw": 0.38,
+        "away_win": 0.39
+    },
+    "2023-12-20_Heidenheim_Freiburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-12-20_Leverkusen_Bochum": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-12-20_Stuttgart_Augsburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2023-12-20_Wolfsburg_BayernMunich": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-01-12_BayernMunich_Hoffenheim": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-01-13_Augsburg_Leverkusen": {
+        "home_win": 0.15,
+        "draw": 0.25,
+        "away_win": 0.6
+    },
+    "2024-01-13_FCKoln_Heidenheim": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-01-13_Freiburg_UnionBerlin": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-01-13_Mainz_Wolfsburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-01-13_RBLeipzig_EinFrankfurt": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-01-13_Darmstadt_Dortmund": {
+        "home_win": 0.05,
+        "draw": 0.15,
+        "away_win": 0.8
+    },
+    "2024-01-14_Bochum_WerderBremen": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-01-14_M'gladbach_Stuttgart": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-01-20_Bochum_Stuttgart": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-01-20_Darmstadt_EinFrankfurt": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-01-20_FCKoln_Dortmund": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-01-20_Freiburg_Hoffenheim": {
+        "home_win": 0.55,
+        "draw": 0.25,
+        "away_win": 0.2
+    },
+    "2024-01-20_Heidenheim_Wolfsburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-01-20_RBLeipzig_Leverkusen": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-01-21_BayernMunich_WerderBremen": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-01-21_M'gladbach_Augsburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-01-24_BayernMunich_UnionBerlin": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-01-26_EinFrankfurt_Mainz": {
+        "home_win": 0.73,
+        "draw": 0.16,
+        "away_win": 0.11
+    },
+    "2024-01-27_Augsburg_BayernMunich": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-01-27_Hoffenheim_Heidenheim": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-01-27_Stuttgart_RBLeipzig": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-01-27_WerderBremen_Freiburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-01-27_Wolfsburg_FCKoln": {
+        "home_win": 0.55,
+        "draw": 0.25,
+        "away_win": 0.2
+    },
+    "2024-01-27_Leverkusen_M'gladbach": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-01-28_UnionBerlin_Darmstadt": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-01-28_Dortmund_Bochum": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-02-02_Heidenheim_Dortmund": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-02-03_BayernMunich_M'gladbach": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-02-03_Bochum_Augsburg": {
+        "home_win": 0.55,
+        "draw": 0.25,
+        "away_win": 0.2
+    },
+    "2024-02-03_Darmstadt_Leverkusen": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-02-03_Freiburg_Stuttgart": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-02-03_Mainz_WerderBremen": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-02-03_FCKoln_EinFrankfurt": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-02-04_Wolfsburg_Hoffenheim": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-02-04_RBLeipzig_UnionBerlin": {
+        "home_win": 0.35,
+        "draw": 0.25,
+        "away_win": 0.4
+    },
+    "2024-02-07_Mainz_UnionBerlin": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-02-09_Dortmund_Freiburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-02-10_Augsburg_RBLeipzig": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-02-10_EinFrankfurt_Bochum": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-02-10_M'gladbach_Darmstadt": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-02-10_UnionBerlin_Wolfsburg": {
+        "home_win": 0.55,
+        "draw": 0.25,
+        "away_win": 0.2
+    },
+    "2024-02-10_WerderBremen_Heidenheim": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-02-10_Leverkusen_BayernMunich": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-02-11_Stuttgart_Mainz": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-02-11_Hoffenheim_FCKoln": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-02-16_FCKoln_WerderBremen": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-02-17_Darmstadt_Stuttgart": {
+        "home_win": 0.05,
+        "draw": 0.25,
+        "away_win": 0.7
+    },
+    "2024-02-17_Heidenheim_Leverkusen": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-02-17_Hoffenheim_UnionBerlin": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-02-17_Mainz_Augsburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-02-17_Wolfsburg_Dortmund": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-02-17_RBLeipzig_M'gladbach": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-02-18_Freiburg_EinFrankfurt": {
+        "home_win": 0.23,
+        "draw": 0.33,
+        "away_win": 0.44
+    },
+    "2024-02-18_Bochum_BayernMunich": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-02-23_Leverkusen_Mainz": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-02-24_M'gladbach_Bochum": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-02-24_Stuttgart_FCKoln": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-02-24_UnionBerlin_Heidenheim": {
+        "home_win": 0.63,
+        "draw": 0.24,
+        "away_win": 0.13
+    },
+    "2024-02-24_WerderBremen_Darmstadt": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-02-24_BayernMunich_RBLeipzig": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-02-25_EinFrankfurt_Wolfsburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-02-25_Dortmund_Hoffenheim": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-02-25_Augsburg_Freiburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-03-01_Freiburg_BayernMunich": {
+        "home_win": 0.05,
+        "draw": 0.15,
+        "away_win": 0.8
+    },
+    "2024-03-02_Bochum_RBLeipzig": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-03-02_Darmstadt_Augsburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-03-02_Heidenheim_EinFrankfurt": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-03-02_Mainz_M'gladbach": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-03-02_UnionBerlin_Dortmund": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-03-02_Wolfsburg_Stuttgart": {
+        "home_win": 0.15,
+        "draw": 0.25,
+        "away_win": 0.6
+    },
+    "2024-03-03_FCKoln_Leverkusen": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-03-03_Hoffenheim_WerderBremen": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-03-08_Stuttgart_UnionBerlin": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-03-09_Augsburg_Heidenheim": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-03-09_BayernMunich_Mainz": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-03-09_M'gladbach_FCKoln": {
+        "home_win": 0.55,
+        "draw": 0.25,
+        "away_win": 0.2
+    },
+    "2024-03-09_RBLeipzig_Darmstadt": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-03-09_WerderBremen_Dortmund": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-03-10_Bochum_Freiburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-03-10_EinFrankfurt_Hoffenheim": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-03-10_Leverkusen_Wolfsburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-03-15_FCKoln_RBLeipzig": {
+        "home_win": 0.05,
+        "draw": 0.25,
+        "away_win": 0.7
+    },
+    "2024-03-16_Darmstadt_BayernMunich": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-03-16_Heidenheim_M'gladbach": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-03-16_Mainz_Bochum": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-03-16_UnionBerlin_WerderBremen": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-03-16_Wolfsburg_Augsburg": {
+        "home_win": 0.23,
+        "draw": 0.33,
+        "away_win": 0.44
+    },
+    "2024-03-16_Hoffenheim_Stuttgart": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-03-17_Freiburg_Leverkusen": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-03-17_Dortmund_EinFrankfurt": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-03-30_EinFrankfurt_UnionBerlin": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-03-30_Leverkusen_Hoffenheim": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-03-30_M'gladbach_Freiburg": {
+        "home_win": 0.23,
+        "draw": 0.43,
+        "away_win": 0.34
+    },
+    "2024-03-30_RBLeipzig_Mainz": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-03-30_WerderBremen_Wolfsburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-03-30_BayernMunich_Dortmund": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-03-31_Augsburg_FCKoln": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-03-31_Stuttgart_Heidenheim": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-03-31_Bochum_Darmstadt": {
+        "home_win": 0.55,
+        "draw": 0.25,
+        "away_win": 0.2
+    },
+    "2024-04-05_EinFrankfurt_WerderBremen": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-04-06_FCKoln_Bochum": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-04-06_Freiburg_RBLeipzig": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-04-06_Heidenheim_BayernMunich": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-04-06_Mainz_Darmstadt": {
+        "home_win": 0.62,
+        "draw": 0.24,
+        "away_win": 0.14
+    },
+    "2024-04-06_UnionBerlin_Leverkusen": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-04-06_Dortmund_Stuttgart": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-04-07_Hoffenheim_Augsburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-04-07_Wolfsburg_M'gladbach": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-04-12_Augsburg_UnionBerlin": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-04-13_BayernMunich_FCKoln": {
+        "home_win": 0.8300000000000001,
+        "draw": 0.08000000000000002,
+        "away_win": 0.09000000000000001
+    },
+    "2024-04-13_Bochum_Heidenheim": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-04-13_Mainz_Hoffenheim": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-04-13_M'gladbach_Dortmund": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-04-13_RBLeipzig_Wolfsburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-04-13_Stuttgart_EinFrankfurt": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-04-14_Darmstadt_Freiburg": {
+        "home_win": 0.05,
+        "draw": 0.15,
+        "away_win": 0.8
+    },
+    "2024-04-14_Leverkusen_WerderBremen": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-04-19_EinFrankfurt_Augsburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-04-20_FCKoln_Darmstadt": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-04-20_Heidenheim_RBLeipzig": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-04-20_Hoffenheim_M'gladbach": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-04-20_Wolfsburg_Bochum": {
+        "home_win": 0.55,
+        "draw": 0.25,
+        "away_win": 0.2
+    },
+    "2024-04-20_UnionBerlin_BayernMunich": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-04-21_WerderBremen_Stuttgart": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-04-21_Dortmund_Leverkusen": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-04-21_Freiburg_Mainz": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-04-26_Bochum_Hoffenheim": {
+        "home_win": 0.15,
+        "draw": 0.25,
+        "away_win": 0.6
+    },
+    "2024-04-27_Augsburg_WerderBremen": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-04-27_BayernMunich_EinFrankfurt": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-04-27_Freiburg_Wolfsburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-04-27_RBLeipzig_Dortmund": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-04-27_Leverkusen_Stuttgart": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-04-28_M'gladbach_UnionBerlin": {
+        "home_win": 0.25,
+        "draw": 0.45,
+        "away_win": 0.3
+    },
+    "2024-04-28_Mainz_FCKoln": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-04-28_Darmstadt_Heidenheim": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-05-03_Hoffenheim_RBLeipzig": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-05-04_Dortmund_Augsburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-05-04_Stuttgart_BayernMunich": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-05-04_WerderBremen_M'gladbach": {
+        "home_win": 0.55,
+        "draw": 0.25,
+        "away_win": 0.2
+    },
+    "2024-05-04_Wolfsburg_Darmstadt": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-05-04_FCKoln_Freiburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-05-05_UnionBerlin_Bochum": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-05-05_EinFrankfurt_Leverkusen": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-05-05_Heidenheim_Mainz": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-05-10_Augsburg_Stuttgart": {
+        "home_win": 0.15,
+        "draw": 0.25,
+        "away_win": 0.6
+    },
+    "2024-05-11_FCKoln_UnionBerlin": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-05-11_Freiburg_Heidenheim": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-05-11_M'gladbach_EinFrankfurt": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-05-11_RBLeipzig_WerderBremen": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-05-11_Mainz_Dortmund": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-05-12_Darmstadt_Hoffenheim": {
+        "home_win": 0.12,
+        "draw": 0.35,
+        "away_win": 0.53
+    },
+    "2024-05-12_BayernMunich_Wolfsburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-05-12_Bochum_Leverkusen": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-05-18_Dortmund_Darmstadt": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-05-18_EinFrankfurt_RBLeipzig": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-05-18_Heidenheim_FCKoln": {
+        "home_win": 0.43,
+        "draw": 0.28,
+        "away_win": 0.29
+    },
+    "2024-05-18_Hoffenheim_BayernMunich": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-05-18_Leverkusen_Augsburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-05-18_Stuttgart_M'gladbach": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-05-18_UnionBerlin_Freiburg": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-05-18_WerderBremen_Bochum": {
+        "home_win": 0.45,
+        "draw": 0.25,
+        "away_win": 0.3
+    },
+    "2024-05-18_Wolfsburg_Mainz": {
+        "home_win": 0.32,
+        "draw": 0.36,
+        "away_win": 0.32
+    }
+}
