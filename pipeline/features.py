@@ -120,6 +120,14 @@ def compute_features():
             f_row['home_xga_avg5'] = sum(hs['xga_conceded'][-5:]) / min(5, len(hs['xga_conceded'])) if hs['xga_conceded'] else 1.0
             f_row['away_xga_avg5'] = sum(as_st['xga_conceded'][-5:]) / min(5, len(as_st['xga_conceded'])) if as_st['xga_conceded'] else 1.0
             
+            f_row['form_diff'] = f_row['home_form_pts'] - f_row['away_form_pts']
+            f_row['xg_diff'] = f_row['home_xg_avg5'] - f_row['away_xg_avg5']
+            f_row['xga_diff'] = f_row['home_xga_avg5'] - f_row['away_xga_avg5']
+            
+            f_row['home_strength'] = f_row['home_xg_avg5'] - f_row['home_xga_avg5']
+            f_row['away_strength'] = f_row['away_xg_avg5'] - f_row['away_xga_avg5']
+            f_row['strength_diff'] = f_row['home_strength'] - f_row['away_strength']
+            
             # DEFERRED: possession and shots features removed until a reliable
             # API source is confirmed. Columns exist in DB schema for future backfill.
             # Candidates to revisit: API-Football (100/day), statsbomb open data
@@ -157,6 +165,8 @@ def compute_features():
                 f_row['days_rest_away'] = (datetime.strptime(d_str, "%Y-%m-%d") - datetime.strptime(as_st['last_date'], "%Y-%m-%d")).days
             else:
                 f_row['days_rest_away'] = 7
+                
+            f_row['rest_diff'] = f_row['days_rest_home'] - f_row['days_rest_away']
                 
             # Home/Away records
             f_row['home_is_home_record'] = hs['home_wins'] / hs['home_played'] if hs['home_played'] > 0 else 0.43
