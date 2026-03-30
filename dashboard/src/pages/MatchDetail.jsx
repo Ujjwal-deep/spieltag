@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { supabase } from '../lib/supabaseClient';
-import { Loader2, ArrowLeft } from 'lucide-react';
+import { Loader2, ArrowLeft, Sparkles } from 'lucide-react';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 const MatchDetail = () => {
@@ -9,6 +9,9 @@ const MatchDetail = () => {
   const [match, setMatch] = useState(null);
   const [predictions, setPredictions] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [generatingInsight, setGeneratingInsight] = useState(false);
+  const [insight, setInsight] = useState(null);
+  const [insightError, setInsightError] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -21,7 +24,14 @@ const MatchDetail = () => {
           .eq('match_id', matchId)
           .single();
           
-        if (matchData) setMatch(matchData);
+        if (matchData) {
+          setMatch(matchData);
+          if (matchData.ai_insight === 'GENERATING...') {
+            setGeneratingInsight(true);
+          } else if (matchData.ai_insight) {
+            setInsight(matchData.ai_insight);
+          }
+        }
 
         // Fetch predictions
         const { data: predsData } = await supabase
@@ -50,6 +60,37 @@ const MatchDetail = () => {
     };
     fetchData();
   }, [matchId]);
+
+  const handleGenerateInsight = async () => {
+    try {
+      setGeneratingInsight(true);
+      setInsightError(null);
+      
+      const res = await fetch('/api/generate-insights', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ matchId })
+      });
+      
+      const data = await res.json();
+      
+      if (!res.ok) {
+        throw new Error(data.error || 'Failed to generate insight');
+      }
+      
+      if (data.status === 'success' || data.status === 'ready') {
+        setInsight(data.insight);
+      }
+      // If it's still processing by someone else, we just leave it as generating.
+    } catch (err) {
+      console.error(err);
+      setInsightError(err.message);
+    } finally {
+      setGeneratingInsight(false);
+    }
+  };
 
   if (loading) return (
     <div className="flex justify-center items-center h-[60vh]">
@@ -100,6 +141,42 @@ const MatchDetail = () => {
             </BarChart>
           </ResponsiveContainer>
         </div>
+      </div>
+
+      {/* AI Insight Section */}
+      <div className="glass-card p-8 mt-10 bg-dark-800/50 relative overflow-hidden group">
+        <div className="absolute -top-10 -right-10 w-40 h-40 bg-neon-cyan/5 rounded-full blur-3xl" />
+        <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+          <Sparkles className="w-6 h-6 text-neon-cyan" />
+          AI Match Context
+        </h3>
+        
+        {insight ? (
+          <div className="text-gray-300 leading-relaxed text-lg border-l-2 border-neon-cyan/50 pl-5">
+            {insight}
+          </div>
+        ) : generatingInsight ? (
+          <div className="flex items-center gap-4 text-neon-cyan py-6 animate-pulse">
+            <Loader2 className="w-6 h-6 animate-spin" />
+            <span className="font-medium">Synthesizing match data and generating analysis...</span>
+          </div>
+        ) : (
+          <div>
+            <p className="text-gray-400 mb-6">
+              Generate a quick LLM summary based on the ensemble predictions and team forms.
+            </p>
+            <button 
+              onClick={handleGenerateInsight}
+              className="inline-flex items-center gap-2 px-6 py-3 bg-neon-blue/10 hover:bg-neon-blue/20 text-neon-cyan border border-neon-blue/30 rounded-lg transition-all font-medium group-hover:shadow-[0_0_15px_rgba(56,189,248,0.2)]"
+            >
+              <Sparkles className="w-4 h-4" />
+              Generate AI Analysis
+            </button>
+            {insightError && (
+              <p className="text-red-400 mt-4 text-sm">{insightError}</p>
+            )}
+          </div>
+        )}
       </div>
     </div>
   );

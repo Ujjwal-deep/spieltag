@@ -13,7 +13,8 @@ CREATE TABLE public.matches (
     home_goals INTEGER,
     away_goals INTEGER,
     result INTEGER,
-    status TEXT DEFAULT 'SCHEDULED'
+    status TEXT DEFAULT 'SCHEDULED',
+    ai_insight TEXT
 );
 
 -- Create the predictions table
