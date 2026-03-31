@@ -76,22 +76,37 @@ const Home = () => {
 
   return (
     <div>
-      <div className="mb-10 text-center">
-        <h1 className="text-4xl font-black mb-2 text-white">Upcoming Matchday</h1>
-        <p className="text-gray-400 max-w-2xl mx-auto">
-          AI-driven probabilities for the next Bundesliga fixtures. Powered by Ensemble ML models.
-        </p>
+      <div className="matchday-header">
+        <div className="mh-left">
+          <div className="mh-eyebrow">
+            <div className="mh-dot" />
+            Live predictions
+          </div>
+          <div className="mh-title">Matchday 28</div>
+          <div className="mh-sub">
+            Saturday, April 4, 2026 &middot;{' '}
+            {matches.length > 0 ? `${matches.length} fixtures` : 'No fixtures loaded'}
+          </div>
+        </div>
+        <div className="mh-right">
+          <div className="mh-badge">
+            Powered by <span>Ensemble ML</span>
+          </div>
+          <div className="mh-league">Bundesliga 2025/26</div>
+        </div>
       </div>
 
       {matches.length === 0 ? (
-         <div className="text-center text-gray-500 py-12">No upcoming scheduled matches found in the database.</div>
+        <div className="text-center text-gray-500 py-12">
+          No upcoming scheduled matches found in the database.
+        </div>
       ) : (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="match-grid">
           {matches.map(match => (
-            <MatchCard 
-              key={match.match_id} 
-              match={match} 
-              prediction={predictions[match.match_id]} 
+            <MatchCard
+              key={match.match_id}
+              match={match}
+              prediction={predictions[match.match_id]}
             />
           ))}
         </div>

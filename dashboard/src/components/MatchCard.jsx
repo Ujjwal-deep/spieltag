@@ -22,43 +22,72 @@ const MatchCard = ({ match, prediction }) => {
   const winner = getWinnerHighlight();
 
   return (
-    <div className="glass-card flex flex-col p-6 group relative overflow-hidden">
-      {/* Decorative gradient blob */}
-      <div className="absolute -top-10 -right-10 w-32 h-32 bg-neon-blue/10 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-      
-      <div className="flex justify-between items-center mb-4 border-b border-dark-700/50 pb-3">
-        <div className="flex items-center text-sm text-gray-400 gap-2">
-          <Calendar className="w-4 h-4 text-neon-blue" />
-          <span>{formattedDate} • {formattedTime}</span>
+    <div className="match-card">
+      <div className="match-card-bg" />
+      <div className="match-card-inner">
+        <div className="match-card-meta">
+          <Calendar className="w-3 h-3" />
+          <span>{formattedDate} &bull; {formattedTime}</span>
         </div>
-      </div>
 
-      <div className="flex justify-between items-center py-2 relative z-10">
-        <div className={`text-xl font-bold ${winner === 'home' ? 'text-white' : 'text-gray-400'}`}>
-          {match.home_team}
+        <div className="flex justify-between items-center mb-4">
+          <div className="match-card-team">
+            {match.home_team}
+          </div>
+          <div className="match-card-vs">
+            vs
+          </div>
+          <div className="match-card-team text-right">
+            {match.away_team}
+          </div>
         </div>
-        <div className="text-gray-500 font-medium px-4">vs</div>
-        <div className={`text-xl font-bold text-right ${winner === 'away' ? 'text-white' : 'text-gray-400'}`}>
-          {match.away_team}
-        </div>
-      </div>
 
-      <div className="mt-4">
-         <div className="flex justify-between text-xs font-semibold text-gray-500 mb-1 px-1">
-           <span className={winner === 'home' ? 'text-neon-green' : ''}>H: {(probH * 100).toFixed(1)}%</span>
-           <span className={winner === 'draw' ? 'text-yellow-500' : ''}>D: {(probD * 100).toFixed(1)}%</span>
-           <span className={winner === 'away' ? 'text-neon-red' : ''}>A: {(probA * 100).toFixed(1)}%</span>
-         </div>
-         <ProbabilityBar homeProb={probH} drawProb={probD} awayProb={probA} />
-      </div>
-
-      <div className="mt-6 flex justify-between items-center pt-4 border-t border-dark-700/50">
-        <div className="text-xs text-gray-500 uppercase tracking-wider font-semibold">
-          Confidence: <span className="text-gray-300">{(parseFloat(prediction?.confidence || 0) * 100).toFixed(1)}%</span>
+        <div className="match-card-prob-row">
+          <span
+            className={`match-card-prob-h ${winner === 'home' ? 'match-card-winner' : ''}`}
+          >
+            H: {(probH * 100).toFixed(1)}%
+          </span>
+          <span className="match-card-prob-d">
+            D: {(probD * 100).toFixed(1)}%
+          </span>
+          <span
+            className={`match-card-prob-a ${winner === 'away' ? 'match-card-winner' : ''}`}
+          >
+            A: {(probA * 100).toFixed(1)}%
+          </span>
         </div>
-        <Link to={`/match/${match.match_id}`} className="flex items-center text-sm text-neon-cyan hover:neon-text-blue transition-all gap-1 font-medium group-hover:gap-2">
-          Deep Dive <ChevronRight className="w-4 h-4" />
-        </Link>
+
+        <div className="match-card-bar-track">
+          <div
+            className="match-card-bar-seg match-card-bar-seg-h"
+            style={{ width: `${probH * 100}%` }}
+          />
+          <div
+            className="match-card-bar-seg match-card-bar-seg-d"
+            style={{ width: `${probD * 100}%` }}
+          />
+          <div
+            className="match-card-bar-seg match-card-bar-seg-a"
+            style={{ width: `${probA * 100}%` }}
+          />
+        </div>
+
+        <div className="match-card-footer">
+          <div className="match-card-confidence">
+            Confidence:{' '}
+            <span>
+              {(parseFloat(prediction?.confidence || 0) * 100).toFixed(1)}%
+            </span>
+          </div>
+          <Link
+            to={`/match/${match.match_id}`}
+            className="match-card-deep-dive"
+            onClick={(e) => e.stopPropagation()}
+          >
+            Deep Dive <ChevronRight className="w-4 h-4" />
+          </Link>
+        </div>
       </div>
     </div>
   );

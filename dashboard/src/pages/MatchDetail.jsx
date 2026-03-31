@@ -102,26 +102,66 @@ const MatchDetail = () => {
 
   return (
     <div className="max-w-5xl mx-auto pb-20">
-      <Link to="/" className="inline-flex items-center text-gray-400 hover:text-white mb-8 transition-colors group">
-        <ArrowLeft className="w-5 h-5 mr-2 group-hover:-translate-x-1 transition-transform" />
-        Back to Dashboard
+      <Link to="/" className="mb-8 dd-back-link">
+        <ArrowLeft className="w-5 h-5" />
+        Back to Matchday
       </Link>
-      
-      <div className="glass-card p-10 mb-10 text-center bg-gradient-to-b from-dark-800 to-dark-900 border-t border-neon-blue/30">
-        <div className="text-neon-cyan mb-3 font-semibold tracking-widest text-sm uppercase">Deep Dive Analysis</div>
-        <h1 className="text-5xl font-black text-white mb-4 tracking-tight">
-          {match.home_team} <span className="text-gray-600 font-light mx-4 text-4xl">vs</span> {match.away_team}
-        </h1>
-        <p className="text-gray-400 text-lg">
-          {new Date(match.date).toLocaleString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' })}
-        </p>
+
+      <div className="dd-hero">
+        <div className="dd-eyebrow">Deep Dive Analysis</div>
+        <div className="dd-teams">
+          <div className="dd-team-name">{match.home_team}</div>
+          <div className="dd-vs">vs</div>
+          <div className="dd-team-name">{match.away_team}</div>
+        </div>
+        <div className="dd-date">
+          {new Date(match.date).toLocaleString('en-US', {
+            weekday: 'long',
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+            hour: '2-digit',
+            minute: '2-digit',
+          })}
+        </div>
       </div>
 
-      <div className="glass-card p-8 bg-dark-800/50">
-        <h3 className="text-2xl font-bold text-white mb-8 flex items-center gap-3">
-          <div className="w-2 h-8 bg-neon-green rounded-full"></div>
+      {/* Probability tiles */}
+      {predictions.length > 0 && (
+        <div className="dd-prob-strip">
+          {(() => {
+            const ensemble = predictions.find(p => p.name === 'Ensemble') || predictions[0];
+            const homeVal = parseFloat(ensemble.Home);
+            const drawVal = parseFloat(ensemble.Draw);
+            const awayVal = parseFloat(ensemble.Away);
+            return (
+              <>
+                <div className="dd-stat">
+                  <div className="dd-stat-label">Home win</div>
+                  <div className="dd-stat-val val-h">{homeVal.toFixed(1)}%</div>
+                  <div className="dd-stat-sub">{match.home_team}</div>
+                </div>
+                <div className="dd-stat">
+                  <div className="dd-stat-label">Draw</div>
+                  <div className="dd-stat-val val-d">{drawVal.toFixed(1)}%</div>
+                  <div className="dd-stat-sub">Either side</div>
+                </div>
+                <div className="dd-stat">
+                  <div className="dd-stat-label">Away win</div>
+                  <div className="dd-stat-val val-a">{awayVal.toFixed(1)}%</div>
+                  <div className="dd-stat-sub">{match.away_team}</div>
+                </div>
+              </>
+            );
+          })()}
+        </div>
+      )}
+
+      <div className="dd-section">
+        <div className="dd-section-title">
           Model Consensus Comparison
-        </h3>
+        </div>
+        <div className="bg-[#111314] border border-[#1f2224] rounded-[14px] p-5">
         <div className="h-96 w-full">
           <ResponsiveContainer width="100%" height="100%">
             <BarChart
@@ -135,24 +175,51 @@ const MatchDetail = () => {
                 itemStyle={{ fontWeight: 600 }}
               />
               <Legend wrapperStyle={{ paddingTop: '20px' }} />
-              <Bar dataKey="Home" fill="#10b981" radius={[4, 4, 0, 0]} animationDuration={1500} />
-              <Bar dataKey="Draw" fill="#eab308" radius={[4, 4, 0, 0]} animationDuration={1500} />
-              <Bar dataKey="Away" fill="#ef4444" radius={[4, 4, 0, 0]} animationDuration={1500} />
+              <Bar
+                dataKey="Home"
+                fill="#10b981"
+                radius={[4, 4, 0, 0]}
+                isAnimationActive
+                animationDuration={600}
+                animationEasing="ease-out"
+                animationBegin={0}
+              />
+              <Bar
+                dataKey="Draw"
+                fill="#eab308"
+                radius={[4, 4, 0, 0]}
+                isAnimationActive
+                animationDuration={600}
+                animationEasing="ease-out"
+                animationBegin={80}
+              />
+              <Bar
+                dataKey="Away"
+                fill="#ef4444"
+                radius={[4, 4, 0, 0]}
+                isAnimationActive
+                animationDuration={600}
+                animationEasing="ease-out"
+                animationBegin={160}
+              />
             </BarChart>
           </ResponsiveContainer>
         </div>
       </div>
+      </div>
 
       {/* AI Insight Section */}
-      <div className="glass-card p-8 mt-10 bg-dark-800/50 relative overflow-hidden group">
-        <div className="absolute -top-10 -right-10 w-40 h-40 bg-neon-cyan/5 rounded-full blur-3xl" />
-        <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
-          <Sparkles className="w-6 h-6 text-neon-cyan" />
+      <div className="dd-section">
+        <div className="dd-section-title">
           AI Match Context
-        </h3>
+        </div>
         
         {insight ? (
-          <div className="text-gray-300 leading-relaxed text-lg border-l-2 border-neon-cyan/50 pl-5">
+          <div className="dd-context-box">
+            <div className="dd-context-header">
+              <Sparkles className="w-4 h-4 text-neon-cyan" />
+              <span>Analysis</span>
+            </div>
             {insight}
           </div>
         ) : generatingInsight ? (
@@ -167,10 +234,13 @@ const MatchDetail = () => {
             </p>
             <button 
               onClick={handleGenerateInsight}
-              className="inline-flex items-center gap-2 px-6 py-3 bg-neon-blue/10 hover:bg-neon-blue/20 text-neon-cyan border border-neon-blue/30 rounded-lg transition-all font-medium group-hover:shadow-[0_0_15px_rgba(56,189,248,0.2)]"
+              className="dd-ai-button"
             >
-              <Sparkles className="w-4 h-4" />
-              Generate AI Analysis
+              <span className="dd-ai-button-bg" />
+              <span className="dd-ai-button-inner">
+                <Sparkles className="w-4 h-4" />
+                Generate AI Analysis
+              </span>
             </button>
             {insightError && (
               <p className="text-red-400 mt-4 text-sm">{insightError}</p>

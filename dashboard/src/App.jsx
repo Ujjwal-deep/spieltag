@@ -9,7 +9,7 @@ function App() {
     <Router>
       <div className="min-h-screen flex flex-col pt-16">
         <Navbar />
-        <main className="flex-1 container mx-auto px-4 py-8 max-w-7xl">
+        <main className="flex-1 px-4 py-8 w-full max-w-6xl mx-auto">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/match/:matchId" element={<MatchDetail />} />
