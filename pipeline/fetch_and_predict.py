@@ -189,9 +189,28 @@ def fetch_upcoming_matches():
 def main():
     print("Fetching upcoming fixtures using API...")
     upcoming_matches = fetch_upcoming_matches()
+    
     if not upcoming_matches:
-        print("No scheduled matches found or API key not set.")
-        return
+        print("No scheduled matches found from API. Falling back to SCHEDULED matches in Supabase...")
+        try:
+            res = supabase.table('matches').select('*').eq('status', 'SCHEDULED').execute()
+            db_matches = res.data
+            if not db_matches:
+                print("No scheduled matches found in Supabase database either. Aborting.")
+                return
+            
+            upcoming_matches = []
+            for m in db_matches:
+                upcoming_matches.append({
+                    'utcDate': m['date'],
+                    'homeTeam': {'name': m['home_team']},
+                    'awayTeam': {'name': m['away_team']},
+                    'matchday': 28
+                })
+            print(f"Successfully loaded {len(upcoming_matches)} scheduled matches from Supabase fallback.")
+        except BaseException as e:
+            print(f"Error fetching scheduled matches from Supabase: {e}")
+            return
 
     print("Loading historical terminal states...")
     team_state, h2h_state = get_latest_states()
@@ -306,6 +325,13 @@ def main():
     ensemble_raw_preds = meta_model.predict_proba(X_stack)
     ensemble_preds = apply_hierarchical_correction(ensemble_raw_preds)
     
+    print("Cleaning up old matches from Supabase...")
+    try:
+        yesterday = (datetime.now() - pd.Timedelta(days=1)).isoformat()
+        supabase.table('matches').delete().lt('date', yesterday).execute()
+    except BaseException as e:
+        print(f"Error cleaning up old matches: {e}")
+
     print("Upserting to Supabase...")
     for i, row in df_new.iterrows():
         match_id = row['match_id']
@@ -344,6 +370,32 @@ def main():
         upsert_prediction('LogReg', log_preds[i])
         upsert_prediction('XGBoost', xgb_preds[i])
         upsert_prediction('Ensemble', ensemble_preds[i])
+        
+    print("Saving match features to JSON...")
+    features_dict = {}
+    for i, row in df_new.iterrows():
+        match_id = row['match_id']
+        row_dict = {}
+        for col, val in row.items():
+            if pd.isna(val):
+                row_dict[col] = None
+            elif isinstance(val, (np.integer, np.int64, int)):
+                row_dict[col] = int(val)
+            elif isinstance(val, (np.floating, np.float64, float)):
+                row_dict[col] = float(val)
+            else:
+                row_dict[col] = val
+        features_dict[match_id] = row_dict
+
+    try:
+        public_dir = os.path.join(os.path.dirname(__file__), '..', 'dashboard', 'public')
+        os.makedirs(public_dir, exist_ok=True)
+        features_file = os.path.join(public_dir, 'match_features.json')
+        with open(features_file, 'w') as f:
+            json.dump(features_dict, f, indent=2)
+        print(f"Match features successfully exported to {features_file}")
+    except BaseException as e:
+        print(f"Error exporting match features to JSON: {e}")
         
     print("Done! Predictions pushed to Supabase successfully.")
 

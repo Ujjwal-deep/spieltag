@@ -576,4 +576,260 @@
       font-size: 24px;
     }
   }
+
+  /* Model Features Dashboard Styles */
+  .dd-features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    margin-bottom: 28px;
+  }
+
+  .dd-features-card {
+    background: #111314;
+    border: 1px solid #1f2224;
+    border-radius: 16px;
+    padding: 22px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .dd-features-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 50% 0%, rgba(59, 130, 246, 0.04) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .dd-features-card-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid #1a1d1e;
+    padding-bottom: 10px;
+  }
+
+  .dd-features-card-title span {
+    font-size: 11px;
+    font-weight: 500;
+    color: #555555;
+    margin-left: auto;
+  }
+
+  .comparison-row {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 16px;
+  }
+
+  .comparison-row:last-child {
+    margin-bottom: 0;
+  }
+
+  .comparison-label-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .comparison-label-text {
+    color: #888888;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .comparison-val-home {
+    color: #4ade80;
+  }
+
+  .comparison-val-away {
+    color: #f87171;
+  }
+
+  .comparison-slider-bar {
+    height: 6px;
+    background: #1c1f20;
+    border-radius: 9999px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+  }
+
+  .comparison-slider-fill {
+    height: 100%;
+    border-radius: 9999px;
+  }
+
+  /* Team ELO specific styles */
+  .elo-header-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+
+  .elo-team-box {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 45%;
+  }
+
+  .elo-team-name {
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .elo-team-val {
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+  }
+
+  .elo-team-val.val-h {
+    color: #4ade80;
+    text-shadow: 0 0 12px rgba(74, 222, 128, 0.15);
+  }
+
+  .elo-team-val.val-a {
+    color: #f87171;
+    text-shadow: 0 0 12px rgba(248, 113, 113, 0.15);
+  }
+
+  .elo-vs-badge {
+    font-size: 10px;
+    font-weight: 700;
+    color: #444444;
+    background: #1c1f20;
+    border: 1px solid #252829;
+    border-radius: 9999px;
+    padding: 4px 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .elo-gap-indicator {
+    background: #1c1f20;
+    border-radius: 10px;
+    padding: 10px 14px;
+    font-size: 11px;
+    font-weight: 600;
+    color: #888888;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.02);
+  }
+
+  .elo-gap-indicator span {
+    color: #ffffff;
+    font-weight: 700;
+  }
+
+  .elo-gap-indicator span.home-lead {
+    color: #4ade80;
+  }
+
+  .elo-gap-indicator span.away-lead {
+    color: #f87171;
+  }
+
+  /* Badge styling */
+  .badge-neon {
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .badge-neon-green {
+    background: rgba(16, 185, 129, 0.1);
+    color: #10b981;
+    border: 1px solid rgba(16, 185, 129, 0.2);
+    box-shadow: 0 0 10px rgba(16, 185, 129, 0.05);
+  }
+
+  .badge-neon-blue {
+    background: rgba(59, 130, 246, 0.1);
+    color: #3b82f6;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.05);
+  }
+
+  .badge-neon-red {
+    background: rgba(239, 68, 68, 0.1);
+    color: #ef4444;
+    border: 1px solid rgba(239, 68, 68, 0.2);
+    box-shadow: 0 0 10px rgba(239, 68, 68, 0.05);
+  }
+
+  .badge-neon-yellow {
+    background: rgba(234, 179, 8, 0.1);
+    color: #eab308;
+    border: 1px solid rgba(234, 179, 8, 0.2);
+    box-shadow: 0 0 10px rgba(234, 179, 8, 0.05);
+  }
+
+  /* H2H Timeline */
+  .h2h-timeline {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 6px;
+  }
+
+  .h2h-bubble {
+    width: 24px;
+    height: 24px;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 800;
+    color: #000000;
+  }
+
+  .h2h-bubble.win-h {
+    background: #4ade80;
+    box-shadow: 0 0 10px rgba(74, 222, 128, 0.2);
+  }
+
+  .h2h-bubble.win-a {
+    background: #f87171;
+    box-shadow: 0 0 10px rgba(248, 113, 113, 0.2);
+  }
+
+  .h2h-bubble.draw {
+    background: #facc15;
+    box-shadow: 0 0 10px rgba(250, 204, 21, 0.2);
+  }
+
+  .h2h-bubble.empty {
+    background: #1c1f20;
+    color: #555555;
+    border: 1px solid #252829;
+  }
+
+  @media (max-width: 900px) {
+    .dd-features-grid {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 16px;
+    }
+  }
 }

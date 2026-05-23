@@ -13,11 +13,15 @@ const Home = () => {
     const fetchData = async () => {
       try {
         setLoading(true);
+        const today = new Date();
+        today.setHours(0, 0, 0, 0);
+
         // Fetch upcoming scheduled matches
         const { data: matchesData, error: matchesError } = await supabase
           .from('matches')
           .select('*')
           .eq('status', 'SCHEDULED')
+          .gte('date', today.toISOString())
           .order('date', { ascending: true })
           .limit(9);
 
@@ -82,10 +86,11 @@ const Home = () => {
             <div className="mh-dot" />
             Live predictions
           </div>
-          <div className="mh-title">Matchday 28</div>
+          <div className="mh-title">{matches.length > 0 ? "Upcoming Fixtures" : "Off-Season"}</div>
           <div className="mh-sub">
-            Saturday, April 4, 2026 &middot;{' '}
-            {matches.length > 0 ? `${matches.length} fixtures` : 'No fixtures loaded'}
+            {matches.length > 0 
+              ? `${new Date(matches[0].date).toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' })} · ${matches.length} fixtures` 
+              : 'The current season has concluded'}
           </div>
         </div>
         <div className="mh-right">
@@ -97,8 +102,21 @@ const Home = () => {
       </div>
 
       {matches.length === 0 ? (
-        <div className="text-center text-gray-500 py-12">
-          No upcoming scheduled matches found in the database.
+        <div className="flex flex-col items-center justify-center py-20 px-4 text-center">
+          <div className="w-24 h-24 rounded-full bg-[#1c1f20] border border-[#252829] flex items-center justify-center mb-6 shadow-[0_0_30px_rgba(16,185,129,0.1)]">
+            <AlertCircle className="w-10 h-10 text-neon-green opacity-80" />
+          </div>
+          <h2 className="text-3xl font-extrabold text-white tracking-tight mb-3">
+            Season Concluded
+          </h2>
+          <p className="text-gray-400 max-w-md mx-auto leading-relaxed">
+            The current campaign has officially wrapped up. There are no more scheduled fixtures to predict. Check back next season for live predictions, insights, and model updates!
+          </p>
+          <div className="mt-8 flex gap-4">
+            <div className="px-6 py-3 rounded-full bg-[#111314] border border-[#1f2224] text-sm text-gray-300 font-medium">
+              Models are currently in hibernation
+            </div>
+          </div>
         </div>
       ) : (
         <div className="match-grid">
